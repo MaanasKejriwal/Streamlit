@@ -587,7 +587,7 @@ if add_radio=='Calculate susceptibility to mental distress':
     
     
     
-    st.write("### Answer the following 21 Questions: ")
+    st.write("### Answer the following 14 Questions: ")
     
     # create the colums to hold user inputs
     col1, col2, col3 = st.columns((3,3,3))
