@@ -2,21 +2,41 @@
 
 ## Walkthrough of the Repository
 
+- chatbotmain.py: 
+This is our main file. It is the python program containing all the functions, and is launched when the app is run. It extracts all the required details from the other supplementary file, and is the backbone of the app. 
 
+- chatbot_train.py:
+This file contains the training code for the chatbot. It does not need to be run again, and is attached for reference.
+
+- logReg_model.pkl:
+The trained ML model for heart diagnosis is contained within this pickled file.
+
+- logReg3_model.pkl:
+The trained ML model for diabetes diagnosis is contained within this pickled file.
+
+- Mental_Health_model5.pkl:
+The trained ML model for mental health diagnosis is contained within this pickled file.
+
+- model.h5:
+The trained ML model for the chatbot is contained within this pickled file.
+
+- Ashoka_Final.ipynb:
+It contains the visualisations, models, and cleaning of the datasets
 
 ## Inspiration & Aim
 
-As a very personal project for all of our team members, we worked hard in developing a realistic solution for our elderly. With personal experience and understanding how our own grandparents struggle with technology, we approached the project while keeping this in mind and understanding the actual needs of those who face technical difficulties.
+As a very personal project for all of our team members, we have worked hard in developing a realistic solution for the elderly members of our society along with the rural sections of India. With personal experience and understanding how our own grandparents struggle with technology, we approached the project while keeping this in mind and understanding the actual needs of those who face technical difficulties.
 
-A result of the RedBricks Hackathon 2022, this project aims to assist the elderly with their preliminary diagnosis and factors affecting Heart Diseases, Diabetes, Common Illnesses and Mental Illness through a simplistic, intuitive and easy to comprehend UI. Along with this, we aim to spread awareness about these diseases through the program. Furthermore, it also helps the rural population in recognising illnesses that might turn fatal if ignored or untreated. In such a way, the program guides those who don't have sufficient facilities for a checkup. Primarily, our intention is to help the users in case of any emergency or help them recogise these illnesses as a premptive measure to fight it. We accomplish this through a comprehensive yet simple questionnaire along with a straightforward chatbot trained with thousands of entries from official databases.
+A result of the RedBricks Hackathon 2022, this project aims to assist the elderly with their preliminary diagnosis and factors affecting Heart Diseases, Diabetes, Common Illnesses and Mental Illness through a simplistic, intuitive and easy to comprehend UI.Furthermore, it also helps the rural population in recognising illnesses that might turn fatal if ignored or untreated and reach the nearest docotor in emergencies. In such a way, the program guides those who don't have sufficient facilities for a checkup. Primarily, our intention is to help the users in case of any emergency or help them recognise these illnesses as a premptive measure to fight it. We accomplish this through a comprehensive yet simple questionnaire along with a straightforward chatbot trained with thousands of entries from official databases.
 
 
-## Problem Definition 
+## Problem Definition & Code Functionality 
 
-Identifying key health indicators that significantly affect heart diseases so that we can detect and prevent the factors having the greatest impact. 
-1) What risk factors are most predictive of heart disease risk?
-2) Can we use a subset of the risk factors to accurately build a webapp that can predict whether an individual has heart disease?
-
+Our Code aims to solve 4 main problems and provides the perfect streamlit interface for that 
+1) Using an AI Trained Chatbot to converse with elderly patients and diagnose illnesses through symptoms provided  
+2) Used a dataset of the risk factors to accurately build a webapp that can predict the probability of an individual getting heart disease?
+3) Building a machine learning model to accurately build a webapp that can predict the probability of an individual getting diabetes?
+4) Building a machine learning model using logistic regression that can predict the probability of an individual being susceptible to mental health problems.
 
 
 ## Datasets
@@ -42,30 +62,22 @@ https://www.kaggle.com/code/kairosart/machine-learning-for-mental-health-1/data?
 - Changing previously Ordinal variable to Categorical variable (Binary yes-no)
 - Making ordering of Ordinal variable to become more precise by removing the unwanted statistical data
 - Final 21 variables listed as Blood pressure, cholesterol, how recent is cholesterol check, BMI, smoke activity, stroke, diabetes, physical activity frequency, eat fruits, eat veggies, amount of alcohol consumption, registered healthcare insurance, financial problems for medical visits, general health, mental health, physical health, difficulty walking/climbing stairs, sex, age, education level, income level.
+- Similarly the diabetes and the mental health datasets were individually cleaned, curated, and finalized.
 
 ## Machine Learning Model
 - Decided to use logistics regression after extensive research and consideration for other machine learning models
-- Extracted response and predictors. Assigned Y as dependent variable (HeartDiseaseorAttack) and X as 21 independent variables dataframe
+- Extracted response and predictors. Assigned Y as dependent variable (HeartDiseaseorAttack) and X as 21 independent variables dataframe while predicting heart disease probability.
 - Split dataset into random train and test with ratio of 0.25
 - Imported modules such as preprocessing and pipeline from sklearn to scale the model
 - Ran the model and dumped it into a PKL file using joblib. 
 - Used spyder to create streamlit application where we use the ML Model (PKL file) to predict heart disease risk.
+- The accuracy of the models of heart disease, diabetes, and mental health ranged from 75% to 89% which shows our model is not only ideal but also realistic.
 
-- The accuracy of the model came out to be around 89% which shows our model is not only ideal but also realistic.
-- The model showed 1.4% false positives.
+## Final Implementation & Future Scope
 
-## Final Implementation & Combination of Model (FrontEnd)
-
-
-## Scope
-
-## What did we learn from this project?
-
-1) Use of Streamlit for deploying webapp and incorporating a beautiful interface for our ML model pickled using joblib
-2) Use of methods such as predict and predict_proba in logistic regression
-3) Exploring Sklearn modules such as Pipeline , Standard scaler for scaling and further exploration of seaborn as a tool for visualization
-4) Collaborating using GitHub
-5) Cleaning and Curating datasets and binary and multiclass classification
+- The final implementation is done through streamlit where a webapp is successfully deployed that has all 3 of our ML Models and the chatbot.
+- We would like to work on this project beyond the hackathon and would like to work on the full stack web development of this webapp so that we can connect databases which will allow elderly citizens and rural patients to send their data to their nearest doctor and contact emergency services if required.
+- We would also like to further train our chatbot and work on different ML Model apart from logistic regressions for even greater accuracy.
 
 
 ## References
@@ -79,5 +91,6 @@ https://www.kaggle.com/code/kairosart/machine-learning-for-mental-health-1/data?
 8) https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf
 9) https://www.cdc.gov/pcd/issues/2019/19_0109.html
 10) https://docs.streamlit.io/library/api-reference
+11) https://data-flair.training/blogs/python-chatbot-project/
 
 
