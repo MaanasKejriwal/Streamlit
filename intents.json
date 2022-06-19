@@ -1,0 +1,98 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello!", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can help you understand what common illness you might be going through, and give you remedies and precautions to avoid the same. Please enter your symptoms."],
+         "context": [""]
+        },
+        {"tag": "enter_symptoms",
+         "patterns": ["Should I tell you my symptoms?","Can I give you my symptoms?","Should I enter my symptoms?"],
+         "responses": ["You may enter your symptoms, one by one"],
+         "context": [""]
+        },
+        {"tag": "Allergies",
+         "patterns": ["Eye irritation","Runny nose","Running nose","Stuffy Nose","Watery eyes","Sneezing","inflamed nose","inflamed throat","itchy nose","itchy throat","hives","tingling"],
+         "responses": ["My diagnosis: You are undergoing allergies. If you believe this is correct, ask me what allergies are. If you feel that you have been wrongly diagnosed, enter other symptoms"],
+         "context": [""]
+        },
+        {"tag": "Cold_and_flu",
+         "patterns": ["fever","headache","fatigue","tiredness","dry cough","nasal congestion","cough","sore throat","sneezing"],
+         "responses": ["My diagnosis: You are undergoing cold/flu symptoms. If you believe this is correct, ask me what a cold or a flu is. If you feel that you have been wrongly diagnosed, enter other symptoms"],
+         "context": [""]
+        },
+        {"tag": "Conjunctivitis",
+         "patterns": ["red eyes","itchy eyes","burning eyes","pus in eyes","crusty eyelids","pink eyes","pasted eyes","unclear vision"],
+         "responses": ["My diagnosis: You are undergoing Conjunctivitis (pink eye). If you believe this is correct, ask me what conjuctivitis is. If you feel that you have been wrongly diagnosed, enter other symptoms"],
+         "context": [""]
+        },
+        {"tag": "Diarrhea",
+         "patterns": ["watery stools","loose stools","frequent bowel movements","cramping","pain in abdomen","bloating","nausea","stomach ache","bloody stools" ],
+         "responses": ["My diagnosis: You are undergoing Diarrhea. If you believe this is correct, ask me what diarrhea is. If you feel that you have been wrongly diagnosed, enter other symptoms."],
+         "context": [""]
+        },
+        {"tag": "Mononucleosis",
+         "patterns": ["Extreme fatigue","swollen lymph glands","appetite loss","muscle ache"],
+         "responses": ["My diagnosis: You are undergoing Mononucleosis. If you believe this is correct, ask me what Mononucleosis is. If you feel that you have been wrongly diagnosed, enter other symptoms."],
+         "context": [""]
+        },
+        {"tag": "COVID-19",
+         "patterns": ["dry cough","high fever","loss of taste or smell","rashes","breathing difficulty","shortness of breath","chest pain","Can't breathe" ],
+         "responses": ["My diagnosis: You have COVID-19. If you believe this is correct, ask me what COVID is. If you feel that you have been wrongly diagnosed, enter other symptoms."],
+         "context": [""]
+        },
+        {"tag": "Allergies_info",
+         "patterns": ["What are allergies?","Give me information about allergies","Tell me what allergies are"],
+         "responses": ["Allergies are an immune response triggered by allergens, an ordinarily harmful substance.\n Food, pollen milk and latex are common causes.\n Allergies may be treated by using Antihistamines, Decongestants, Anti-inflammatory agents (corticosterid), and allergy shots.\n Prevention: Avoid pollen, keep windows closed, discuss a prescription, be careful about what you eat and drink"],
+         "context": [""]
+         },
+        {"tag": "Cold_and_flu_info",
+         "patterns": ["What is cold and flu?","Give me information about cold and flu","Tell me what cold and flu is","Cold and flu"],
+         "responses": ["Colds and influenza (flu) are the most common illnesses among college students. \n Causes: Both of these illnesses are upper respiratory infections, meaning they involve your nose, throat, and lungs. Viruses cause both colds and flu by increasing inflammation of the membranes in the nose and throat. Most transmission of these viruses occurs via hand-to-hand contact.\n Treatment: If any problem is causing you discomfort, you should seek medical care. Rest more than usual and avoid exercise until symptoms are gone. Drink lots of clear fluids (e.g., water, tea). Stay away from cigarette smoke. Do not take antibiotics. Avoid caffeine and drinking alcohol. Eat a well-balanced diet. \n Medication: Decongestants, salt water nasal sprays, humidifiers, dextromethorphan, phenol in lozenges, Acetaminophen, Aspirin, Ibuprofen. \n Prevention: Wash your hands often,Get regular exercise and eat well, Follow good sleep habits, Get a flu shot each fall"],
+         "context": [""]
+        },
+        {"tag": "Conjunctivitis_info",
+         "patterns": ["What is conjunctivitis?","Give me information about conjunctivitis","Tell me what conjunctivitis is","Conjunctivitis"],
+         "responses": ["Conjunctivitis, an inflammation of the transparent membrane (conjunctiva) that lines your eyelids and part of your eyeballs, has several possible causes. It could be a bacterial or viral infection, an allergic reaction to pollen or animal dander, or a result of chemical irritants (smoke, chlorine, lens solution, etc.). \n Treatment: Wash hands, don't rub eyes, discard eye makeup, Avoid wearing contact lenses. \n Prevention: Avoid touching eyes"],
+         "context": [""]
+        },
+        {"tag": "Diarrhea_info",
+         "patterns": ["What is diarrhea?","Give me information about diarrhea","Tell me what diarrhea is","diarrhea"],
+         "responses": ["Bacterial infection, caused by contaminated food or water. \n Treatment: Avoid foods that are milk-based, greasy, high-fiber, or very sweet, Avoid caffeine and alcohol, Don’t drink clear liquids exclusively for more than 24 hours, Use over-the-counter lactobacillus acidophilus capsules or tablets, Over-the-counter drugs, such as Imodium A-D, should only be used if absolutely necessary, decrease exercising. \n Prevention: Eat and drink responsibly  "],
+         "context": [""]
+        },
+        {"tag": "Mononucleosis_info",
+         "patterns": ["What is Mononucleosis?","Give me information about mononucleosis","Tell me what mononucleosis is","mononucleosis"],
+         "responses": ["Mononucleosis is an illness caused by the Epstein-Barr virus (EBV), which is spread through saliva. \n Treatment: Mono is a virus, so antibiotics won’t help. Make sure you get plenty of rest, eat healthy foods, avoid alcohol (because your liver may be inflamed and drinking weakens immune responses), drink plenty of fluids, take aspirin or an aspirin substitute to reduce pain and fever, gargle salt water to relieve sore throat, and avoid strenuous activity. Because your spleen may be swollen, it is important not to engage in contact sports which could rupture your spleen. Returning to normal activity too quickly increases your chances of relapse. \n Prevention: Avoiding someone with mono can be hard because infected individuals often do not show symptoms. Because the incubation period is so long, a person can be contagious 1-2 months before showing any symptoms, and some people don’t show symptoms at all. Even after signs of mono have disappeared, a person may still be producing the virus. A strong immune system, maintained by healthy diet, exercise, and adequate sleep, can help you from getting ill. Fortunately, mono is not very contagious, and is usually only passed through intimate contact, such as kissing. "],
+         "context": [""]
+        },
+        {"tag": "COVID-19_info",
+         "patterns": ["What is COVID?","Give me information about COVID","Tell me what COVID is","COVID-19","COVID"],
+         "responses": ["Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. \n Cause: Virus(SARS-CoV-2) \n Treatment: Not found. \n Prevention: Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub. Maintain at least 1 metre distance between you and people coughing or sneezing. Avoid touching your face. Cover your mouth and nose when coughing or sneezing. Stay home if you feel unwell. Refrain from smoking and other activities that weaken the lungs. Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people. Wear masks. "],
+         "context": [""]
+        }
+        
+        
+                  
+    
+    
+   ]
+}

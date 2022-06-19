@@ -1,0 +1,1 @@
+{'intent': 'Cold_and_flu_info', 'probability': '0.99710184'}
