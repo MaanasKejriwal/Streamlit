@@ -2,7 +2,7 @@
 
 ## Walkthrough of the Repository
 
-- chatbotmain.py: 
+- main2.py: 
 This is our main file. It is the python program containing all the functions, and is launched when the app is run. It extracts all the required details from the other supplementary file, and is the backbone of the app. 
 
 - chatbot_train.py:
